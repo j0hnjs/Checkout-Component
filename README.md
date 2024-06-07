@@ -1,7 +1,7 @@
 <div align="center">
   <h1> HTML/CSS Checkout Component </h1>
   <br></br>
-  <p>Live Site: ()</p>
+  <p>Live Site: (https://checkout-component-delta.vercel.app/)</p>
 </div>
 
 <h1>Table of Contents</h1>
