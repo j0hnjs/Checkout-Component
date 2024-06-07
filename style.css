@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Red Hat Display',
+         sans-serif;
+
+    min-height: 100vh;
+    background-image: url(images/desktop_bck.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #F3EDC8;
+    position: relative;
+    font-size: 16px;
+}
+
+.hero {
+    background-size: 450px 220px;
+}
+
+.container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 450px;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.text-content {
+    padding: 7%;
+    text-align: center;
+}
+
+.title {
+    color: #7D0A0A;
+    font-weight: 900;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.text-content p.subtitle {
+    color: black;
+    margin-bottom: 25px;
+}
+
+.plan-box {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f2e7e7;
+    border-radius: 12px;
+    padding: 15px;
+    align-items: center;
+}
+
+.plan-box-left {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.plan-box-left div {
+    margin-left: 20px;
+}
+
+.plan-box-left div h5 {
+    font-weight: 900;
+    font-size: 15px;
+    color: #7D0A0A;
+}
+
+.plan-box-left div p {
+    font-size: 14px;
+    color: black;
+}
+
+.plan-box a {
+    font-weight: 900;
+    color: #BF3131;
+    transition: color .3s ease;
+}
+
+.plan-box a:hover {
+    text-decoration: none;
+    color: #7D0A0A;
+}
+
+a.proceed-btn {
+    display:block;
+    text-decoration: none;
+    color: white;
+    background-color: #BF3131;
+    padding: 20px 0;
+    border-radius: 12px;
+    margin: 30px 0;
+    transition: background-color .3s ease;
+}
+
+a.proceed-btn:hover {
+    background-color: #f67a7a;
+}
+
+a.cancel-btn {
+    color: hsl(224, 23%, 55%);
+    text-decoration: none;
+    font-weight: 900;
+    transition: color .3s ease;
+}
+
+a.cancel-btn:hover {
+    color: #7D0A0A;
+}
+
+@media only screen and (max-width: 425) {
+    body {
+        background-image: url(images/mobile_bck.svg);
+        font-size: 14px;
+    }
+    .container {
+        max-width: 87%;
+    }
+    .title {
+        font-size: 23px;
+    }
+    div.plan-box {
+        padding: 12px;
+    }
+    .plan-box-left div {
+        margin-left: 10px;
+    }
+    a.proceed-btn, a.cancel-btn, .plan-box a {
+        font-size: 13px;
+    }
+    .text-content {
+        padding: 9% 7%;
+    }
+}
